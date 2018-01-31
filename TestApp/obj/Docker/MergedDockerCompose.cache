@@ -1,0 +1,13 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  webapplication1:
+    build:
+      context: C:\Docker\Docker-MVC\TestApp\WebApplication1
+      dockerfile: Dockerfile
+    image: webapplication1
+    ports:
+    - 80/tcp
+version: '3.0'
